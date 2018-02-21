@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MapaGoggle2</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="menu_alcazaba">Alcazaba</string>
+    <string name="menu_posicion">Posicion</string>
+    <string name="menu_spain_zoom">SpainZoom</string>
+    <string name="menu_vista">Vista</string>
+    <string name="menu_spain">Spain</string>
+</resources>
