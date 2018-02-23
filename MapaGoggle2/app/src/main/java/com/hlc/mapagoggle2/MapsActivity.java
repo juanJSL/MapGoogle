@@ -53,7 +53,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap.addMarker(new MarkerOptions().position(initLocation).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(initLocation));
         mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
-
     }
 
     @Override
@@ -69,15 +68,17 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             // centra la Alcazaba de Almería en vista híbrida
             LatLng alcazaba = new LatLng(36.840835, -2.471172);
             camPos = new CameraPosition.Builder().target(alcazaba).zoom(19).bearing(45).tilt(80).build();
-// con zoom x19         .zoom(19)
-// orientación noreste (o giro de 45 grados sexagesimales
-// este -ver la brújula arriba a la izquierda).bearing(45)
-// punto de vista bajo para ver más suelo (70 grados
-// sexagesimales con respecto a la vertical) .tilt(80).build();
+        // con zoom x19         .zoom(19)
+        // orientación noreste (o giro de 45 grados sexagesimales
+        // este -ver la brújula arriba a la izquierda).bearing(45)
+        // punto de vista bajo para ver más suelo (70 grados
+        // sexagesimales con respecto a la vertical) .tilt(80).build();
             camUpd = CameraUpdateFactory.newCameraPosition(camPos);
             mMap.animateCamera(camUpd);
-        }else if(item.getItemId()==R.id.menu_posicion){
 
+        }else if(item.getItemId()==R.id.menu_posicion){
+            //Coger la posicion de la camara y mostrarla en un toast falta mostrarlo en un toast
+            mMap.getCameraPosition();
         }else if(item.getItemId()==R.id.menu_spain){
             // centra España
             camUpd = CameraUpdateFactory.newLatLng(new LatLng(40.41, -3.69));
