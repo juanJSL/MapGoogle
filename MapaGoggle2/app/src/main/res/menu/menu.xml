@@ -18,6 +18,7 @@
         app:showAsAction="ifRoom|withText"
         android:title="@string/menu_spain_zoom" />
     <item
-        android:id="@+id/menu_vista"app:showAsAction="ifRoom|withText"
+        android:id="@+id/menu_vista"
+        app:showAsAction="ifRoom|withText"
         android:title="@string/menu_vista" />
 </menu>
